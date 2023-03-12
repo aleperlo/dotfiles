@@ -67,6 +67,7 @@
           - gimp
           - gnome-console
           - gnome-music
+          - seahorse
           # Services
           - syncthing
           - "@Virtualization"
@@ -91,6 +92,7 @@
           - libtree-sitter
           # Development tools
           - cmake
+          - coq
           - git
           - ghc
           - neovim
