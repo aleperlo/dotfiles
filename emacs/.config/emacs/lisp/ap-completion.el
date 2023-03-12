@@ -64,14 +64,6 @@
 	   (append corfu-margin-formatters)
 	   #'kind-icon-margin-formatter))
 
-(setup (:package corfu-doc)
-  (:bind-into corfu-map
-    "M-p" corfu-doc-scroll-up
-    "M-n" corfu-doc-scroll-down
-    "M-ò" corfu-doc-toggle)
-  (:with-hook corfu-mode-hook
-    (:hook corfu-doc-mode)))
-
 (setup (:package which-key)
   (:option which-key-mode t))
 
