@@ -1,5 +1,5 @@
 (setup (:package ef-themes)
-  (load-theme 'ef-light t))
+  (load-theme 'ef-spring t))
 
 (setup (:package minions)
   (:option minions-mode t))
