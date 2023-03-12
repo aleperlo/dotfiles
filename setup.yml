@@ -106,6 +106,7 @@
           - texlive-nopageno
           - texlive-wrapfig
         state: present
+        install_weak_deps: false
 
     - name: Install flatpak apps
       become: yes
