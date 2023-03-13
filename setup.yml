@@ -105,6 +105,7 @@
           - texlive-circuitikz
           - texlive-nopageno
           - texlive-wrapfig
+          - texlive-karnaugh-map
         state: present
         install_weak_deps: false
 
