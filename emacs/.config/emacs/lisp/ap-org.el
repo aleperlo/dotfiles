@@ -20,7 +20,7 @@
 
 (setup (:package visual-fill-column)
   (:with-mode org-mode
-    (:local-set visual-fill-column-width 100
+    (:local-set visual-fill-column-width 120
 		visual-fill-column-center-text t)
     (:hook visual-fill-column-mode)))
 
