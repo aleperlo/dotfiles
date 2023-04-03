@@ -97,6 +97,7 @@
           - ghc
           - neovim
           - sbcl
+          - spim
           - stow
           - valgrind
           # Texlive
@@ -121,6 +122,7 @@
           - com.slack.Slack
           - com.spotify.Client
           - de.haeckerfelix.Fragments
+          - net.sourceforge.QtSpim
           - org.audacityteam.Audacity
           - org.chromium.Chromium
           - org.geogebra.GeoGebra
