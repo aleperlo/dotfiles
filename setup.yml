@@ -192,6 +192,6 @@
         - {key: "/org/gnome/settings-daemon/plugins/color/night-light-temperature", value: "uint32 3700"}
         - {key: "/org/gnome/shell/disable-user-extensions", value: "false"}
         - {key: "/org/gnome/shell/enabled-extensions", value: "['appindicatorsupport@rgcjonas.gmail.com']"}
-        - {key: "/org/gnome/shell/favorite-apps", value: "['org.gnome.Console.desktop', 'org.chromium.Chromium.desktop', 'emacs.desktop', 'nautilus.desktop']"}
+        - {key: "/org/gnome/shell/favorite-apps", value: "['org.gnome.Console.desktop', 'firefox.desktop', 'emacs.desktop', 'nautilus.desktop']"}
         - {key: "/org/gnome/shell/app-picker-layout", value: "'[]'"}
         - {key: "/org/gnome/desktop/interface/monospace-font-name", value: "'Victor Mono 12'"}
