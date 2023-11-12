@@ -105,6 +105,7 @@
           - texlive-capt-of
           - texlive-circuitikz
           - texlive-nopageno
+          - texlive-steinmetz
           - texlive-wrapfig
           - texlive-karnaugh-map
         state: present

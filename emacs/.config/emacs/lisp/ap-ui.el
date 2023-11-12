@@ -1,5 +1,5 @@
 (setup (:package ef-themes)
-  (load-theme 'ef-spring t))
+  (load-theme 'ef-deuteranopia-dark t))
 
 (setup (:package minions)
   (:option minions-mode t))
