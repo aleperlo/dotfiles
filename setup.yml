@@ -83,6 +83,8 @@
           # Emacs and dependencies
           - emacs
           - clang-tools-extra
+          - golang-x-lint
+          - golang-x-tools-gopls
           - haskell-language-server
           - libtool
           - libvterm

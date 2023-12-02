@@ -23,6 +23,7 @@
 
 (require 'ap-lang-c)
 (require 'ap-lang-coq)
+(require 'ap-lang-go)
 (require 'ap-lang-lisp)
 (require 'ap-lang-haskell)
 (require 'ap-lang-python)
