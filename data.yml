@@ -1,0 +1,88 @@
+copr:
+  - atim/starship
+  - petersen/haskell-language-server
+commands:
+  - "sudo dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm"
+  - "sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc"
+  - "sudo sh -c 'echo -e \"[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc\" > /etc/yum.repos.d/vscode.repo'"
+  - "sudo dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm"
+  - sudo dnf update
+dnf:
+  # Development tools
+  - cmake
+  - docker
+  - docker-compose
+  - starship
+  - stow
+  - valgrind
+  # Compilers, linters and debuggers
+  - clang-tools-extra
+  - gdb
+  - ghc
+  - haskell-language-server
+  - python3-lsp-server
+  - python3-pyflakes
+  # Driver, codecs and services
+  - epson-inkjet-printer-escpr
+  - gnome-shell-extension-appindicator
+  - mozilla-openh264
+  - syncthing
+  # CLI tools
+  - ffmpeg
+  - ImageMagick
+  - pandoc
+  - yt-dlp
+  # Text editors and dependencies
+  - code
+  - emacs
+  - libtool
+  - libtree-sitter
+  - libvterm
+  - neovim
+  # GUI apps
+  - celluloid
+  - file-roller
+  - file-roller-nautilus
+  - fragments
+  - geary
+  - gnome-boxes
+  - seahorse
+  # TexLive
+  - texlive-scheme-small
+  - texlive-capt-of
+  - texlive-circuitikz
+  - texlive-nopageno
+  - texlive-steinmetz
+  - texlive-wrapfig
+flatpak:
+  - com.bitwarden.desktop
+  - com.calibre_ebook.calibre
+  - com.github.tchx84.Flatseal
+  - com.obsproject.Studio
+  - org.audacityteam.Audacity
+  - org.gimp.GIMP
+  - org.gnome.World.PikaBackup
+  - org.kde.kdenlive
+  - org.telegram.desktop
+  - us.zoom.Zoom
+download:
+  - {src: "https://rubjo.github.io/victor-mono/VictorMonoAll.zip", dst: ".local/share/fonts/", command: "mkdir VictorMono; unzip -o VictorMonoAll.zip TTF/* -d VictorMono; rm VictorMonoAll.zip"}
+dconf:
+  - {key: "/org/gnome/desktop/input-sources/xkb-options", value: "['ctrl:swapcaps']"}
+  - {key: "/org/gnome/desktop/peripherals/touchpad/tap-to-click", value: "true"}
+  - {key: "/org/gnome/settings-daemon/plugins/color/night-light-enabled", value: "true"}
+  - {key: "/org/gnome/Console/theme", value: "'auto'"}
+  - {key: "/org/gnome/settings-daemon/plugins/color/night-light-temperature", value: "uint32 3700"}
+  - {key: "/org/gnome/shell/disable-user-extensions", value: "false"}
+  - {key: "/org/gnome/shell/enabled-extensions", value: "['appindicatorsupport@rgcjonas.gmail.com']"}
+  - {key: "/org/gnome/shell/favorite-apps", value: "['gnome-terminal.desktop', 'firefox.desktop', 'emacs.desktop', 'nautilus.desktop', 'code.desktop']"}
+  - {key: "/org/gnome/shell/app-picker-layout", value: "'[]'"}
+  - {key: "/org/gnome/desktop/interface/monospace-font-name", value: "'Victor Mono 12'"}
+services:
+  - syncthing@ap
+  - docker
+groups:
+  - docker
+stow:
+  - bash
+  - starship

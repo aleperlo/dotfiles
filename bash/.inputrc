@@ -1,0 +1,6 @@
+# Ignore case when suggesting completions
+set completion-ignore-case on
+
+# Search backward in history using arrows
+"\e[A":history-search-backward
+"\e[B":history-search-forward
