@@ -85,4 +85,5 @@ groups:
   - docker
 stow:
   - bash
+  - emacs
   - starship
