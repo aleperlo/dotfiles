@@ -1,5 +1,5 @@
 (setup (:package ef-themes)
-  (load-theme 'ef-elea-light t))
+  (load-theme 'ef-maris-light t))
 
 (setup (:package minions)
   (:option minions-mode t))

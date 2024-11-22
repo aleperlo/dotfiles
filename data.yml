@@ -46,6 +46,7 @@ dnf:
   - fragments
   - geary
   - gnome-boxes
+  - ptyxis
   - seahorse
   # TexLive
   - texlive-scheme-small
@@ -61,6 +62,7 @@ flatpak:
   - com.obsproject.Studio
   - org.audacityteam.Audacity
   - org.gimp.GIMP
+  - org.gnome.Papers
   - org.gnome.World.PikaBackup
   - org.kde.kdenlive
   - org.telegram.desktop
@@ -75,7 +77,7 @@ dconf:
   - {key: "/org/gnome/settings-daemon/plugins/color/night-light-temperature", value: "uint32 3700"}
   - {key: "/org/gnome/shell/disable-user-extensions", value: "false"}
   - {key: "/org/gnome/shell/enabled-extensions", value: "['appindicatorsupport@rgcjonas.gmail.com']"}
-  - {key: "/org/gnome/shell/favorite-apps", value: "['gnome-terminal.desktop', 'firefox.desktop', 'emacs.desktop', 'nautilus.desktop', 'code.desktop']"}
+  - {key: "/org/gnome/shell/favorite-apps", value: "['org.gnome.Ptyxis.desktop', 'chromium-browser.desktop', 'emacs.desktop', 'nautilus.desktop', 'code.desktop']"}
   - {key: "/org/gnome/shell/app-picker-layout", value: "'[]'"}
   - {key: "/org/gnome/desktop/interface/monospace-font-name", value: "'Victor Mono 12'"}
 services:
